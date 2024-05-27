@@ -48,7 +48,7 @@ def get_conversational_chain():
     Answer:
     """
 
-    model = ChatOpenAI()
+    model = ChatOpenAI(model_name="gpt-3.5-turbo-16k")
 
     prompt = PromptTemplate(
         template=prompt_template, input_variables=["context", "question"]
